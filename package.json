@@ -1,9 +1,9 @@
 {
-  "name": "wedding",
+  "name": "my-wedding",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://thangddv.github.io/my-wedding",
+  "homepage": "https://phihuyen.github.io/my-wedding",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

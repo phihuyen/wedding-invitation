@@ -4,7 +4,7 @@ const config = {
     title: "Hồng Phi & Thanh Huyền",
     // Opening message/description of the invitation
     description:
-      "Kami akan menikah dan mengundang Anda untuk turut merayakan momen istimewa ini.", // Nanti ini dibikin random
+      "Đây là lời mời của chúng tôi để bạn đến dự tiệc cưới của chúng tôi.",
     // Groom's name
     groomName: "Hồng Phi",
     // Bride's name
@@ -12,9 +12,9 @@ const config = {
     // Groom's parents names
     parentGroom: "Lý Bá Thắng & Nguyễn Thị Tân",
     // Bride's parents names
-    parentBride: "Đỗ Thị Hường",
+    parentBride: "Phạm Văn Quyên & Đỗ Thị Vân",
     // Wedding date (format: YYYY-MM-DD)
-    date: "2025-11-23",
+    date: "2026-01-07",
     // Google Maps embed code to display map on website
     // How to get: open Google Maps → select location → Share → Embed → copy link
     maps_url: "https://maps.app.goo.gl/1VxiDfVHUDgS86aK7",
@@ -34,13 +34,13 @@ const config = {
     favicon: "./favicon.png",
     // Google Apps Script Web App key for handling wishes submission
     appScriptKey:
-      "AKfycbx3GP6TIo5plNswZybfWm25YwQtx6G7D3k5Qp8kLpxShdJVzXUNVg7Em9YA7c1rwOsT",
+      "AKfycbxX8xqyU5LSt7LFaMtF46mrSPxz6BD7k7BLcd9JKTa0hL3qXuP7EiSN0URrklBrCHWXUQ",
     // List of event agenda/schedule
     agenda: [
       {
         // First event name
         title: "Tiệc cưới nhà Trai",
-        date: "2025-11-22",
+        date: "2026-01-07",
         startTime: "16:00",
         endTime: "19:00",
         location: "Thôn Thái Khê, Xã Kiều Phú, Hà Nội",
@@ -79,7 +79,7 @@ const config = {
       // Music title to display
       title: "A Thousand Years", // or Nature Sound
       // Whether music plays automatically when website opens
-      autoplay: false,
+      autoplay: true,
       // Whether music repeats continuously
       loop: true,
       // Duration for which the toast message is displayed
@@ -90,15 +90,15 @@ const config = {
     banks: [
       {
         // Bank name
-        bank: "VIB",
+        bank: "Vietcombank",
         // Account number
-        accountNumber: "021717296",
+        accountNumber: "0011004367073",
         // Account holder name (all uppercase)
         accountName: "LY HONG PHI",
       },
       {
-        bank: "VIB",
-        accountNumber: "022924465",
+        bank: "Vietcombank",
+        accountNumber: "0731000735772",
         accountName: "PHAM THI THANH HUYEN",
       },
       // You can add more banks with the same format
