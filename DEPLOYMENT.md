@@ -25,6 +25,7 @@ If your repository is named `wedding-invitation`, your site will be at:
 `https://yourusername.github.io/wedding-invitation/`
 
 1. Update `vite.config.js`:
+
    ```js
    base: '/wedding-invitation/',
    ```
@@ -40,6 +41,7 @@ If your repository is named `yourusername.github.io`, your site will be at:
 `https://yourusername.github.io/`
 
 1. Update `vite.config.js`:
+
    ```js
    base: '/',
    ```
@@ -89,6 +91,7 @@ bun run deploy
 ```
 
 This will:
+
 1. Build your app (`npm run build`)
 2. Deploy the `dist` folder to the `gh-pages` branch
 3. Your site will be live at the URL specified in `package.json`
@@ -107,15 +110,18 @@ Your site should be live in a few minutes!
 ## Troubleshooting
 
 ### Assets not loading correctly
+
 - Make sure the `base` path in `vite.config.js` matches your repository name
 - The base path should start and end with `/` (e.g., `/wedding-invitation/`)
 
 ### 404 errors
+
 - Clear your browser cache
 - Wait a few minutes for GitHub Pages to update
 - Check that the `gh-pages` branch exists and has files
 
 ### Build errors
+
 - Make sure all dependencies are installed: `npm install` or `bun install`
 - Check for any syntax errors in your code
 - Try deleting `node_modules` and reinstalling
@@ -143,4 +149,3 @@ If you want to use a custom domain:
 1. Add a `CNAME` file in the `public` folder with your domain name
 2. Configure DNS settings with your domain provider
 3. Update GitHub Pages settings to use your custom domain
-

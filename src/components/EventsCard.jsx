@@ -241,7 +241,6 @@ END:VCALENDAR`;
 
 // Main EventCards component that handles multiple events
 const EventCards = ({events}) => {
-  console.log("EVENT: ", events);
   return (
     <div className="space-y-4">
       {events.map((event, index) => (

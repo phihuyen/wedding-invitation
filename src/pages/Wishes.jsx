@@ -4,7 +4,6 @@ import Marquee from "@/components/ui/marquee";
 import {
   Calendar,
   Clock,
-  ChevronDown,
   User,
   MessageCircle,
   Send,
@@ -23,7 +22,7 @@ const getApiUrl = () => {
     return "/api"; // Use proxy in development (configured in vite.config.js)
   }
   // In production, use the full Google Apps Script URL
-  return `https://script.google.com/macros/s/${config.appScriptKey}/exec`;
+  return `https://script.google.com/macros/s/${config.data.appScriptKey}/exec`;
 };
 
 const API_URL = getApiUrl();
@@ -33,7 +32,6 @@ export default function Wishes() {
   const [newWish, setNewWish] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [attendance, setAttendance] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [wishes, setWishes] = useState([]);
@@ -82,7 +80,8 @@ export default function Wishes() {
       setIsSubmitting(false);
       setShowConfetti(true);
       setTimeout(() => setShowConfetti(false), 3000);
-    } catch (err) {
+    } catch (error) {
+      console.error("Error submitting wish: ", error);
       setIsSubmitting(false);
       alert("Có lỗi xảy ra khi gửi lời chúc!");
     }
