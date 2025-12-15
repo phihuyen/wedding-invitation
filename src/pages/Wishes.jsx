@@ -46,7 +46,20 @@ export default function Wishes() {
   useEffect(() => {
     fetch(API_URL)
       .then((res) => res.json())
-      .then((data) => setWishes(data.reverse()))
+      .then((data) => {
+        // Remove duplicates based on timestamp and message
+        const uniqueWishes = data.filter(
+          (wish, index, self) =>
+            index ===
+            self.findIndex(
+              (w) =>
+                w.timestamp === wish.timestamp &&
+                w.message === wish.message &&
+                w.name === wish.name
+            )
+        );
+        setWishes(uniqueWishes.reverse());
+      })
       .catch(console.error);
   }, []);
 
@@ -72,7 +85,18 @@ export default function Wishes() {
       // Refetch wishes after submit
       const res = await fetch(API_URL);
       const data = await res.json();
-      setWishes(data.reverse());
+      // Remove duplicates based on timestamp and message
+      const uniqueWishes = data.filter(
+        (wish, index, self) =>
+          index ===
+          self.findIndex(
+            (w) =>
+              w.timestamp === wish.timestamp &&
+              w.message === wish.message &&
+              w.name === wish.name
+          )
+      );
+      setWishes(uniqueWishes.reverse());
       setNewWish("");
       setName("");
       setPhone("");

@@ -32,7 +32,7 @@ const baseData = {
   // Background music settings (same for both sides)
   audio: {
     // Music file (choose one or replace with your own file)
-    src: "./audio/a-thousand-years.mp3", // or /audio/nature-sound.mp3
+    src: "./audio/westlife-nothings-going-to-change-my-love-for-you.mp3", // or /audio/nature-sound.mp3
     // Music title to display
     title: "A Thousand Years", // or Nature Sound
     // Whether music plays automatically when website opens
