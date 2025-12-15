@@ -3,9 +3,13 @@ import {motion} from "framer-motion";
 import {useEffect, useState} from "react";
 import config from "@/config/config";
 import {formatEventDate} from "@/lib/formatEventDate";
+import {useVenue} from "@/hooks/useVenue";
 
 export default function Hero() {
   const [guestName, setGuestName] = useState("Anh/Chị/Bạn/Em");
+  // venueConfig is used in commented code below (line 224) - kept for when code is uncommented
+  // eslint-disable-next-line no-unused-vars
+  const venueConfig = useVenue();
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -221,7 +225,7 @@ export default function Hero() {
                                     >
                                         <Clock className="w-4 h-4 text-rose-400" />
                                         <span className="text-gray-700 font-medium text-sm sm:text-base">
-                                            {config.data.time}
+                                            {venueConfig.time}
                                         </span>
                                     </motion.div> */}
                 </div>

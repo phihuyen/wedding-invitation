@@ -1,14 +1,12 @@
 // src/pages/LandingPage.jsx
-import config from '@/config/config';
-import { formatEventDate } from '@/lib/formatEventDate';
-import { motion } from 'framer-motion';
-import { Calendar, Clock } from 'lucide-react';
+import config from "@/config/config";
+import {motion} from "framer-motion";
 
-const LandingPage = ({ onOpenInvitation }) => (
+const LandingPage = ({onOpenInvitation}) => (
   <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    exit={{ opacity: 0 }}
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
     className="fixed inset-0 z-10 flex items-center justify-center px-4"
   >
     {/* Decorative Background */}
@@ -19,9 +17,9 @@ const LandingPage = ({ onOpenInvitation }) => (
     {/* Main Content */}
     <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4">
       <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        initial={{y: 20, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{duration: 0.8}}
         className="w-full max-w-md"
       >
         {/* Card Container */}
@@ -35,23 +33,23 @@ const LandingPage = ({ onOpenInvitation }) => (
 
           {/* Song Hy Image */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{delay: 0.3}}
             className="flex flex-col gap-4 mb-6 sm:mb-8 items-center"
           >
             <img
-              src="./images/7a690c70cd6f4031197e12.jpg"
-              alt="Song Hy"
+              src={config.data.ogImage}
+              alt={config.data.groomName + " & " + config.data.brideName}
               className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-full shadow-lg border-4 border-rose-100 bg-white"
             />
           </motion.div>
 
           {/* Couple Names */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{delay: 0.5}}
             className="text-center space-y-4"
           >
             <div className="space-y-2">
@@ -66,22 +64,22 @@ const LandingPage = ({ onOpenInvitation }) => (
 
           {/* Open Invitation Button */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{delay: 0.7}}
             className="mt-16 sm:mt-16"
           >
             <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={{scale: 1.02}}
+              whileTap={{scale: 0.98}}
               onClick={onOpenInvitation}
               className="group relative w-full bg-rose-500 text-white px-6 py-3 sm:px-8 sm:py-3 rounded-xl font-medium shadow-lg hover:bg-rose-600 transition-all duration-200"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 <span>Thân mời</span>
                 <motion.span
-                  animate={{ x: [0, 4, 0] }}
-                  transition={{ repeat: Infinity, duration: 1.5 }}
+                  animate={{x: [0, 4, 0]}}
+                  transition={{repeat: Infinity, duration: 1.5}}
                 >
                   →
                 </motion.span>
