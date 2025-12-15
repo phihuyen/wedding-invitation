@@ -10,9 +10,16 @@ const baseData = {
   // Bride's name
   brideName: "Thanh Huyền",
   // Groom's parents names
-  parentGroom: "Lý Bá Thắng & Nguyễn Thị Tân",
+  parentGroom: {
+    dad: "Lý Bá Thắng",
+    mom: "Nguyễn Thị Tân",
+  },
   // Bride's parents names
-  parentBride: "Phạm Văn Quyên (Cố phụ) & Đỗ Thị Vân",
+  parentBride: {
+    dad: "Phạm Văn Quyên",
+    dad_more: "Cố phụ",
+    mom: "Đỗ Thị Vân",
+  },
   // Wedding date (format: YYYY-MM-DD)
   date: "2026-01-07",
   // Image that appears when link is shared on social media

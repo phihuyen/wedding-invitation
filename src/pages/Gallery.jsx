@@ -159,7 +159,7 @@ export default function Gallery() {
           <div className="w-full">
             <div className="text-left  content-center text-center">
               <h2 className="text-lg font-serif text-rose-600">
-                Bắt đầu từ nơi làm việc và khu chung cư chúng tớ ở ...
+                Bắt đầu từ nơi làm việc ...
               </h2>
               {/* <p className="text-gray-600">Những kỷ niệm nhỏ, những lần đưa nhau đi làm, cà phê, và những buổi tối trên ban công chung cư đã dần chắp cánh cho chúng tớ.</p> */}
             </div>
@@ -182,7 +182,8 @@ export default function Gallery() {
           <div className="">
             <div className="text-left content-center text-center">
               <h2 className="text-lg italic font-serif text-rose-600">
-                ... đến những chuyến đi cùng nhau
+                ... đến những ngày tháng và cuộc sống bên nhau tại Nhật Bản xa
+                xôi
               </h2>
               {/* <p className="text-gray-600">Chúng tớ đã khám phá nhiều nơi cùng nhau — từ những chuyến đi cuối tuần đến những kỷ niệm nhỏ trên đường.</p> */}
             </div>

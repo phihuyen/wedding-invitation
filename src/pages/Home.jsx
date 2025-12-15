@@ -160,11 +160,11 @@ export default function Hero() {
               >
                 NHÀ TRAI <br />
                 <span className="font-light">
-                  Ông: {config.data.parentGroom.split("&")[0]?.trim()}
+                  Ông: {config.data.parentGroom.dad}
                 </span>
                 <br />
                 <span className="font-light">
-                  Bà: {config.data.parentGroom.split("&")[1]?.trim()}
+                  Bà: {config.data.parentGroom.mom}
                 </span>
               </motion.p>
 
@@ -175,15 +175,20 @@ export default function Hero() {
                 className="flex-1 text-center"
               >
                 NHÀ GÁI <br />
-                {config.data.parentBride.split("&")[0]?.trim() && (
-                  <span className="font-light">
-                    Ông: {config.data.parentBride.split("&")[0]?.trim()}
+                {config.data.parentBride.dad && (
+                  <span className="font-light whitespace-nowrap">
+                    Ông: {config.data.parentBride.dad}
+                    {config.data.parentBride.dad_more && (
+                      <span className="text-xs text-gray-400">
+                        &nbsp;({config.data.parentBride.dad_more})
+                      </span>
+                    )}
                   </span>
                 )}
                 <br />
-                {config.data.parentBride.split("&")[1]?.trim() && (
+                {config.data.parentBride.mom && (
                   <span className="font-light">
-                    Bà: {config.data.parentBride.split("&")[1]?.trim()}
+                    Bà: {config.data.parentBride.mom}
                   </span>
                 )}
               </motion.p>
