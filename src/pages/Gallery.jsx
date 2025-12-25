@@ -104,6 +104,8 @@ const section3Images = [
   "./images/anh-7.jpg",
   "./images/anh-8.jpg",
   "./images/anh-9.jpg",
+  "./images/anh-10.jpg",
+  "./images/anh-11.jpg",
 ];
 
 export default function Gallery() {
