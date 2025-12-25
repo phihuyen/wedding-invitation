@@ -95,8 +95,17 @@ function CardSlider({images = [], width = 640, height = 480}) {
   );
 }
 
-const section1Images = ["./images/anh-1.jpg"];
-const section2Images = ["./images/anh-2.jpg"];
+const section1Images = [
+  // "./images/anh-1.jpg",
+  // "./images/anh-1-1.jpg",
+  "./images/anh-1-2.jpg",
+];
+const section2Images = [
+  // "./images/anh-2.jpg",
+  "./images/anh-2-1.jpg",
+  // "./images/anh-2-2.jpg",
+  // "./images/anh-2-3.jpg",
+];
 const section3Images = [
   "./images/anh-3.jpg",
   "./images/anh-4.jpg",

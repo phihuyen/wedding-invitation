@@ -67,11 +67,15 @@ export default function Wishes() {
     e.preventDefault();
     if (!newWish.trim() || !name.trim() || !attendance) return;
     setIsSubmitting(true);
+    const urlParams = new URLSearchParams(window.location.search);
+    const venue = urlParams.get("venue");
+
     const wishData = {
       name,
       phone_number: phone,
       message: newWish,
       attendance,
+      venue,
     };
     try {
       await fetch(API_URL, {

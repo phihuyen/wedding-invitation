@@ -28,13 +28,13 @@ const baseData = {
   favicon: "./favicon.png",
   // Google Apps Script Web App key for handling wishes submission
   appScriptKey:
-    "AKfycbxX8xqyU5LSt7LFaMtF46mrSPxz6BD7k7BLcd9JKTa0hL3qXuP7EiSN0URrklBrCHWXUQ",
+    "AKfycbw18ZRYPgZM2b8r8DXPGRV6BWyv8J09JqPgBlpY_C1R-kV7FVJYUHYDSONCEbf_5EOM0Q",
   // Background music settings (same for both sides)
   audio: {
     // Music file (choose one or replace with your own file)
     src: "./audio/westlife-nothings-gonna-change-my-love-for-you.mp3", // or /audio/nature-sound.mp3
     // Music title to display
-    title: "A Thousand Years", // or Nature Sound
+    title: "Nothing's Gonna Change My Love For You", // or Nature Sound
     // Whether music plays automatically when website opens
     autoplay: true,
     // Whether music repeats continuously
