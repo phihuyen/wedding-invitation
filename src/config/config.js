@@ -36,7 +36,7 @@ const baseData = {
     // Music title to display
     title: "Nothing's Gonna Change My Love For You", // or Nature Sound
     // Whether music plays automatically when website opens
-    autoplay: true,
+    autoplay: false,
     // Whether music repeats continuously
     loop: true,
     // Duration for which the toast message is displayed

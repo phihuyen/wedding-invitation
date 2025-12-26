@@ -14,11 +14,11 @@ export default defineConfig({
     proxy: {
       "/api": {
         target:
-          "https://script.google.com/macros/s/AKfycbxX8xqyU5LSt7LFaMtF46mrSPxz6BD7k7BLcd9JKTa0hL3qXuP7EiSN0URrklBrCHWXUQ/exec",
+          "https://script.google.com/macros/s/AKfycbw18ZRYPgZM2b8r8DXPGRV6BWyv8J09JqPgBlpY_C1R-kV7FVJYUHYDSONCEbf_5EOM0Q/exec",
         changeOrigin: true,
         secure: false,
         rewrite: () =>
-          "https://script.google.com/macros/s/AKfycbxX8xqyU5LSt7LFaMtF46mrSPxz6BD7k7BLcd9JKTa0hL3qXuP7EiSN0URrklBrCHWXUQ/exec",
+          "https://script.google.com/macros/s/AKfycbw18ZRYPgZM2b8r8DXPGRV6BWyv8J09JqPgBlpY_C1R-kV7FVJYUHYDSONCEbf_5EOM0Q/exec",
       },
     },
   },

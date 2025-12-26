@@ -135,7 +135,7 @@ export default function Gifts() {
             className="space-y-4 max-w-md mx-auto content-center text-center mt-12"
           >
             {/* Vietnamese Wedding Wish */}
-            <p className="italic text-gray-800">
+            {/* <p className="italic text-gray-800">
               Chi tiết về lịch trình và phương tiện di chuyển từ Hà Nội sẽ cập
               nhật ở đây:
               <a
@@ -145,7 +145,7 @@ export default function Gifts() {
               >
                 Fill URL here
               </a>
-            </p>
+            </p> */}
           </motion.div>
         </div>
       </section>

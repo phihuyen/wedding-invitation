@@ -68,8 +68,7 @@ export default function Wishes() {
     if (!newWish.trim() || !name.trim() || !attendance) return;
     setIsSubmitting(true);
     const urlParams = new URLSearchParams(window.location.search);
-    const venue = urlParams.get("venue");
-
+    const venue = urlParams.get("venue") || "nha-trai"; // Default to nha-trai if no venue
     const wishData = {
       name,
       phone_number: phone,
@@ -78,14 +77,20 @@ export default function Wishes() {
       venue,
     };
     try {
-      await fetch(API_URL, {
+      console.log("Sending wish data:", API_URL); // Debug log
+
+      const response = await fetch(API_URL, {
         method: "POST",
         redirect: "follow",
         headers: {
-          "Content-Type": "text/plain;charset=utf-8",
+          "Content-Type": "application/json", // Change to JSON content type
         },
         body: JSON.stringify(wishData),
       });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       // Refetch wishes after submit
       const res = await fetch(API_URL);
       const data = await res.json();
